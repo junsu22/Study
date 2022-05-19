@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 400px;
+    border: 5px solid #41c6ad;
+    padding: 70px 32px 30px 32px;
+}
+
+.play-title {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.play-title span {
+    /* width: 33%; */
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.play-music {
+    margin-bottom: 40px;
+}
+
+.play-music__column {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.play-music__column .main-img-box {
+    background-color: #fbbd10;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 130px;
+    border: 2px solid black;
+    border-radius: 15px;
+    /* margin-right: 20px; */
+}
+
+.play-music__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.play-music__name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.play-music__singer {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.play-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-button__column:first-child {
+    width: 50%;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px;
+    margin-right: 20px;
+}
+
+.play-button__column:last-child {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button__heart,
+.play-button__plus {
+    width: 65px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px;
+}
+
+.play-button__heart {
+    margin-right: 20px;
+}
+
+.play-list {
+    margin-top: 50px;
+}
+
+.play-list__column {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.play-list__column .img-box {
+    width: 55px;
+    height: 55px;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin-right: 14px;
+}
+
+.play-music__name_sm {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.play-music__singer_sm {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.play-list__column:first-child .img-box {
+    background-color: tomato;
+}
+
+.play-list__column:nth-child(2) .img-box {
+    background-color: #f789bb;
+}
+
+.play-list__column:nth-child(3) .img-box {
+    background-color: #1947e5;
+}
+
+.play-list__column:last-child .img-box {
+    background-color: #41c6ad;
+}
