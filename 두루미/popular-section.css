@@ -1,0 +1,22 @@
+.popular-sect__column img {
+    width: 105px;
+    height: 131px;
+    margin-right: 22px;
+    border-radius: 10px;
+  }
+  .popular-content {
+    display: flex;
+    align-items: center;
+  }
+  .popular-sect__column:last-child h2 {
+    line-height: 1.3;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .popular-sect__column:last-child p {
+    font-size: 12px;
+    line-height: 1.5;
+    padding-right: 20px;
+    opacity: 0.2;
+  }
