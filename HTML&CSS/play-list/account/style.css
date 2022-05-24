@@ -1,0 +1,44 @@
+body{
+    margin: 10px;
+}
+
+body h1 {
+    text-align: center;
+}
+form {
+    background-color: #ccbb64;
+    border: 3px saddlebrown solid;
+display: flex;
+flex-direction: column;
+padding: 10px 5px;
+margin: 3px;
+}
+
+.gender-male {
+    padding-bottom: 10px;
+}
+.gender-female {
+    padding-bottom: 10px;
+    
+}
+
+#btn {
+    margin-top: 10px;
+    border: 2px solid #383d45;
+    padding: 5px 0px 5px 0px;
+}
+
+#input-box {
+    padding-bottom: 5px;
+}
+
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: small;
+    color: red;
+}

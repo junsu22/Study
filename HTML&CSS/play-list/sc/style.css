@@ -1,0 +1,66 @@
+body {
+    background-color: #575c43,;
+
+}
+
+
+.container{
+align-items: center;
+padding: 10px;
+margin-bottom: 10px;
+border: violet 5px solid;
+border-radius: 10%;
+background-image:  url(../puppy5.jpeg);
+opacity: 1;
+background-position: center;
+background-size: cover;
+height:300px;
+}
+.container h1 {
+    font-weight: 700;
+    text-align: center;
+    color: springgreen;
+}
+
+#input-box {
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+span {
+    font-family: fantasy;
+    font-size: 18px;
+    font-weight: 900;
+    color: #6100e8;
+    background-color: #c7c404;
+}
+
+h2 {
+    text-align: center;
+    color: tomato;
+}
+
+.dat-box {
+    border: 5px solid violet;
+    border-radius: 3%;
+    padding: 10px;
+    padding-top: 15px;
+    background-color:wheat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 90%;    
+}
+
+.dat-box span {
+    color: crimson;    
+    margin:  5px 3px 15px;
+}
+button{
+    font-family: fantasy;
+    font-size: large;
+    border: #6100e8 1px solid;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <title>회원가입</title>
+  </head>
+  <body>
+      <h1>
+        <i class="fa-solid fa-user-group"></i>
+      회원가입
+    </h1>
+    <form>
+      <div id="input-box">
+      <label for = "first-name">ID</label>
+      <input id="first-name" required placeholder="아이디를 입력하세요" type="text" label/>
+      </div>
+      <div id="input-box">
+        <label for ="password">PassWord</label>
+          <input id="password" required placeholder="비밀번호는 15자 미만 작성" 
+            minlength="10" type="password"/>
+          </div>
+          <div id="input-box">
+              <label for = "user-name">Name</label>
+            <input id="user-name" required placeholder="이름을 입력하세요" type="text"/>
+            </div>
+          <div id="input-box">
+            <label for = "email">E-mail</label>
+      <input id="email" required placeholder="ex.) id@email.com" type="email"/>
+    </div>
+    <div id="input-box">
+        <label for = "phone">전화번호</label>
+  <input id="email" required placeholder="ex.) 000-1234-5978" type="email"/><br/> 
+  <h4>전화번호(3자리-4자리-4자리)</h4>
+</div>
+
+
+    <div class="gender-male">
+        <h5>성별을 선택하세요</h5>
+        <span>남자</span>
+           <input type="checkbox">
+        </div> 
+        <div class="gender-female">
+            <span>여자</span>
+               <input type="checkbox">
+            </div> 
+    </div>
+      <div>
+      <label for="birth">Birth day</label>
+      <input id="birth" required placeholder="date" type="date"/>
+      </div>
+        <input id="btn" type="submit" value="Create Account">
+    </form>
+
+    <script src="https://kit.fontawesome.com/689b1298bc.js" crossorigin="anonymous"></script>
+  </body>
+</html>
