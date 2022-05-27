@@ -1,0 +1,12 @@
+target 
+-빌드의 결과물을 어떤 버전으로 할것이냐
+-지정을 안하면 ex3 
+
+lib 
+-기본type definition 라이브러리를 어떤 것을 사용할 것이냐
+-lib 을 지정하지 않았을때
+    -target 이 'es3'이고, 디폴트로 lib.d.ts를 사용
+    -target 이 'es5'이면, 디폴트로 dom,es5,scripthost 를 사용
+    -target 이 'es6'이면, 디폴트로 dom,es6,dom,iterable,scripthost를 사용
+-lib을 지정하면 그 lib 배열로만 라이브러리를 사용
+    -빈 [] =>'no definition found ...'

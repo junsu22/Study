@@ -1,0 +1,17 @@
+// WhatAreClass 
+// -object 를 만드는 blueprint (청사진, 설계도)
+// -클래스 이전에 object 를 만드는 기본적인 방법은 function
+// -JavaScript 에도 class 는 es6부터 가능
+// -OOP를 위한 초석
+// -TypeScript 에서는 클래스도 사용자가 만드는 타입의 하나.
+
+
+
+// start
+
+mkdir class - 프로젝트 만들기
+cd class - 클래스폴더 이동하기 
+npm init --y 옵션 실행 -> package.json 생겼는지 확인
+npm i typescript -D 실행
+npx tsc --init -> 타입스크립트 설정 파일 을 생성 
+code . vs code로 이동
