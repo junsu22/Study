@@ -1,0 +1,10 @@
+{
+    "name" : "JUNSU",
+    "age": 99,
+    "emails":[
+        "okss22s@hanmial.net",
+        "kim@naver.com"
+    ]
+}
+
+// JSON 포맷 - 문자데이터로 관리 된다 .js 내에서 json 의 형태로 문자 형태로 만들어 활용한다.

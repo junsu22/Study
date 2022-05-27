@@ -1,0 +1,7 @@
+
+예약어 
+특별 한 의미를 가지고 있어서 변수나 함수 이름등으로 사용할수 없는 언어
+let this = 'Hello' ; //SyntaxError
+let if = 123; //SyntaxError
+let break = ture ; //SyntaxError
+외에 상당히 많다. 자주쓰는것은 외우고 에디터에서 알려주기때문에 외울필요없다.
