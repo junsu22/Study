@@ -10,7 +10,7 @@ a_none = None
 
 print(type(a_string))
 """""
-암묵적인 약속 : 변수 이름을 길ㄹ게 지어야 할때
+암묵적인 약속 : 변수 이름을 길게 지어야 할때
 단어끼리 분리되길 원한다. (snake case)
 """""
 super_long_variable
