@@ -1,0 +1,31 @@
+.container {
+    width: 300px;
+    background-color: royalblue;
+}
+
+.container .item {
+    border: 4px dashed red;
+    background-color: orange;
+}
+
+.container .item:nth-child(1) {
+    width: 100px;
+    height: 100px;
+
+}
+
+.container .item:nth-child(2) {
+    width: 140px;
+    height: 70px;
+    position: relative;
+    /*자기 자신을 기준으로 움직인다.*/
+    /* 원래 있던 자리에서부터 움직인다. */
+    /* 움직였지만 이건 허상이다. 보이지 않지만 있던 자리에 존재하고있다. */
+    top: 30px;
+    left: 60px;
+}
+
+.container .item:nth-child(3) {
+    width: 70px;
+    height: 120px;
+}
