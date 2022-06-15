@@ -1,0 +1,35 @@
+.container {
+    background-color: royalblue;
+    display: flex;
+    /* 수평 정렬 (가로 축)부모 요소에 flex*/
+    /* flex container */
+}
+
+/* 자식 : flex items */
+.container .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+
+/*
+display 
+flex container 를 만들어 줘야 한다.
+
+flex : 블록 요소와 같이 flex container 정의
+inline-flex : 인라인 요소와 같이 flex container 정의
+*/
+
+/* 
+flex-direction 주 축(main-axis)을 설정
+수평축
+row 행 축 (좌 -> 우)
+row 행 축 (우 -> 좌)
+
+수직  (열) 교차축(cross-axis)
+
+column 을 따로 선언해서 쓰는 경우 많이 없다.
+reverse : 시작과 끝점이 바뀜.
+*/
