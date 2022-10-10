@@ -1,0 +1,89 @@
+*****URI 설계 패턴
+
+1. URI : 인터넷에서 특정 자원을 나타내는 주소값 .해당값은 유일 하다. (응답은 달라질 수 있다.)
+요청 : https://www.xxxx.co.kr/resource/sample/1
+
+ 
+응답 xxxx.pdf , xxx.docx
+
+2. URL : 인터넷 상에서의 자원 즉정 파일이 어디에 위치하는지 식별 하는 주소
+
+요청 :https://www.xxx.co.kr/xxx.pdf 
+
+URL 은 URI 의 하위 개념이다. 
+
+
+*****URI의 설계 원칙 (RFC-3986)
+
+
+-슬래시 구분자 (/) 는 계층 관계를 나타내는 데 사용한다.
+https://xxx.co.kr/classes/java/xxx/xxx/xxxx
+
+-URI 마지막 문자로 (/) 는 포함하지 않는다.
+https://xxx.co.kr/classes/java/xxx/xxx/xxxx/(x)
+
+-하이픈(-)은 URI 가독성 을 높이는데 사용한다.
+https://xxx.co.kr/classes/java/xxx/xxx/xx-xxx
+
+
+-밑줄(_)은 사용하지 않는다. 
+https://xxx.co.kr/classes/java/xxx/xxx/xx_xx(x) 
+
+
+-URI 경로에는 소문자가 적합하다. 
+https://xxx/xx/JAVA/xx/xxx (x)
+https://xxx/xx/java/xx/xxx (o)
+
+-파일 확장자는 URI 에 포함하지 않는다 .
+https://xxx.xxx.co.kr/xxx/java/xxx/xxx.jsp
+
+-프로그래밍 언에에 의존적인 확장자를 사용하지 않는다 . 
+https://xxx.xxx.co.kr/xxx/java/xxx/xxx.do
+
+
+-구현에 의존적인 경로를 사용하지 않는다 .
+https://xxx.xxx.co.kr/xxx/servlet/java/xxx/xxx
+
+
+-세션 ID 를 포함하지 않는다 .
+https://xxx.xxx.co.kr/xxx/java/xxx/xxx?session-id=abcdef
+
+-프로그래밍 언어의 Method 명을 이용하지 않는다. 
+https://https://xxx.xxx.co.kr/xxx/java/xxx/xxx?action=intro
+
+
+-명사에 단수형 보다는 복수형을 사용해야 한다. 컬렉션에 대한 표현은 복수로 사용
+https://xxx.xxx.co.kr/classes/java/curriculums/xxx/xxx
+
+-컨트롤러 이름으로는 동사나 동사구를 사용한다.
+https://xxx.xxx.co.kr/classes/java/curriculums/xxx/xxx/web-master/re-order
+
+
+-경로 부분 중 변하는 부분은 유일한 값으로 대체 한다.
+https://xxx.xxx.co.kr/classes/java/curriculums/xxx/xxx/{lesson-id}/user/{user-id}
+https://xxx.xxx.co.kr/classes/java/curriculums/xxx/xxx/lessons/2/user/100
+
+-CRUD 기능을 나타내는 것은 URI 에 사용하지 않는다.
+GET : https://xxx.xxx.co.kr/classes/java/curriculums/xxx/xxx/READ (x)
+DELETE https://xxx.xxx.co.kr/classes/java/curriculums/xxx/100(o)
+
+
+- URI Query Parameter 디자인 
+URI 쿼리 부분으로 컬렉션 결과에 대해서 필터링 할 수 있다.
+https://xxx.xxx.co.kr/classes/java/curriculums/xxx?chapter=2
+
+-URI 쿼리는 컬렉션의 결과를 페이지뢔 구분하여 나타내는데 사용한다.
+https://xxx.xxx.co.kr/classes/java/curriculums/xxx?chapter=2&page=0&size=10&sort=asc
+
+
+-API 에 있어서 서브 도메인은 일관성 있게 사용해야 한다.
+https://xxx/co.kr
+https://api.xxx.co.kr
+https://api-.xxx.co.kr
+
+
+
+
+-클라이언트 개발자 포탈 서브 도메인은 일관성 있게 만든다.
+https://dev-xxx.co.kr
+https://developer-xxx.co.kr
