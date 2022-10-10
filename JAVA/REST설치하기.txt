@@ -1,0 +1,25 @@
+REST Client 설치하기
+
+추천: 
+크롬 웹스토어 -> REST api client -> 확장 프로그램 더보기 ->
+Talend API Tester (무료) 
+-> 크롬 우측 상단에 확장 프로그램 -> Talend API Tester 실행 
+
+test 구글에서  검색한 페이지 주소 복사 (상단 주소)
+
+
+
+Talend 돌아와서 
+HTTP METHOD 는 GET 방식 
+주소 붙여 넣기 - .send  
+응답  
+
+타입과 HTML 의 원본을 볼수 있고, Prettier 는 사용 못한다.
+
+ex)HEADER
+content-type:	text/html; charset=UTF-8
+
+
+BODY<!doctype html>
+<html itemscope="" itemtype="http://schema.org/SearchResultsPage" lang="ko">...생략
+
