@@ -1,5 +1,13 @@
 whoami echo $shell
+//사용자 확인 
 
 AIX
-
+//
 smitty
+
+scp -r -P 2222 /test
+//default SSH 22 
+
+find ./name '12345*'
+
+bdf | grep /test
