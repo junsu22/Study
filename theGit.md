@@ -7,9 +7,9 @@ clear
 
 저장소생성
 $ git init
-사용자명
+사용자명<br>
 $ git config --global user.name "[사용자명]"
-사용자이메일 지
+사용자이메일 <br>
 $ git config --global user.email "[사용자이메일명]"
 상
 $ git status
